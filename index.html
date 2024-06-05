@@ -109,48 +109,50 @@
     <section class="py-5 bg-light text-center p-5">
       <div class="form-container">
         <h1 class="section-title mb-4 p-4"><em>Step 2: </em>Tell Us About Your Event</h1>
-        <form name="lead" netlify>
+        <form name="lead" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="lead">
           <div class="row">
             <div class="col-12">
-              <label name="firstName" for="firstName" class="form-label">First Name</label>
-              <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
             </div>
             <div class="col-12">
-              <label name="lasttName" for="lastName" class="form-label">Last Name</label>
-              <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
             </div>
             <div class="col-12">
-              <label name="email" for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Email" required>
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
             </div>
             <div class="col-12">
-              <label name="phone" for="phone" class="form-label">Phone</label>
-              <input type="tel" class="form-control" id="phone" placeholder="Phone" required>
+              <label for="phone" class="form-label">Phone</label>
+              <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" required>
             </div>
             <div class="col-12">
-              <label name="eventDate" for="eventDate" class="form-label">When is your event?</label>
-              <input type="date" class="form-control" id="eventDate" required>
+              <label for="eventDate" class="form-label">When is your event?</label>
+              <input type="date" class="form-control" id="eventDate" name="eventDate" required>
             </div>
             <div class="col-12">
-              <label name=booth[]" for="boothPreference" class="form-label">Which booth do you prefer?</label>
-              <select class="form-select form-control" id="boothPreference" required>
+              <label for="boothPreference" class="form-label">Which booth do you prefer?</label>
+              <select class="form-select form-control" id="boothPreference" name="boothPreference" required>
                 <option selected disabled>Select</option>
                 <option value="booth1">Popstar Booth</option>
                 <option value="booth2">Rockstar Booth</option>
               </select>
             </div>
             <div class="col-12">
-              <label name="venueName" for="venueName" class="form-label">Name of venue</label>
-              <input type="text" class="form-control" id="venueName" placeholder="Name of venue" required>
+              <label for="venueName" class="form-label">Name of venue</label>
+              <input type="text" class="form-control" id="venueName" name="venueName" placeholder="Name of venue"
+                required>
             </div>
             <div class="col-12">
-              <label name="hours" for="hours" class="form-label">How many hours?</label>
-              <input type="number" class="form-control" id="hours" placeholder="Hours" required>
+              <label for="hours" class="form-label">How many hours?</label>
+              <input type="number" class="form-control" id="hours" name="hours" placeholder="Hours" required>
             </div>
             <div class="col-12">
-              <label name="eventDescription" for="eventDescription" class="form-label">Describe your event</label>
-              <textarea class="form-control" id="eventDescription" rows="3" placeholder="Describe your event"
-                required></textarea>
+              <label for="eventDescription" class="form-label">Describe your event</label>
+              <textarea class="form-control" id="eventDescription" name="eventDescription" rows="3"
+                placeholder="Describe your event" required></textarea>
             </div>
           </div>
           <button type="submit" class="btn btn-primary mt-3">Submit</button>
