@@ -1,0 +1,400 @@
+body {
+  font-family: "Archivo", sans-serif;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn a {
+  color: black;
+}
+
+p {
+  color: rgba(29, 29, 29, 0.7);
+}
+
+em {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-right: 20px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+  vertical-align: bottom;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: transparent !important;
+  transition: background-color 0.5s ease;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 1rem 2rem;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.navbar-brand,
+.navbar-toggler {
+  color: #fff !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%28255, 255, 255, 0.5%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar .navbar-nav .nav-link {
+  color: white;
+  font-family: Lato;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-brand img {
+  height: 80px;
+}
+
+.full-page-header {
+  height: 100vh;
+  background: url("../images/header.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  padding: 0 20px;
+}
+
+.full-page-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1); /* Overlay to make text readable */
+}
+
+.full-page-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: 100vh; /* Adjust as needed */
+  padding: 20px; /* Optional: Add padding to ensure text isn't flush with the edge */
+}
+
+.full-page-header .content {
+  position: relative;
+  z-index: 1;
+}
+
+.full-page-header h1 {
+  font-family: "Archivo Black", sans-serif; /* Ensure you have the font properly linked */
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+  letter-spacing: 0em;
+  line-height: 1.1em;
+  text-transform: uppercase;
+  margin: 0; /* Remove default margin */
+}
+
+.full-page-header p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* Section Title */
+.section-title {
+  font-family: Archivo Black;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  letter-spacing: 0em;
+  line-height: 1.3em;
+  text-transform: none;
+}
+
+/* Lead Text */
+.lead {
+  font-family: Lato;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  line-height: 1.8em;
+  text-transform: none;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #000000;
+  border-color: #000000;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.customize-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 200px;
+
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.card-body {
+  font-family: Lato;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  line-height: 1.8em;
+  text-transform: none;
+  text-align: center;
+}
+
+.card-title {
+  font-family: Archivo Black;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Vendor Logo Styles */
+.vendor-logo {
+  max-height: 100px;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+}
+
+/* Carousel Styles */
+.carousel-item img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #111111 !important;
+  padding: 2rem 0;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+.footer-logo img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+.footer-menu .row {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .footer-section {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .footer-logo {
+    margin-bottom: 0;
+  }
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-links,
+.footer-locations {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-locations a {
+  color: white;
+}
+
+.footer-links li,
+.footer-locations li {
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.footer-links a {
+  color: white;
+}
+
+.footer-buttons .btn {
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #dee2e6;
+  padding-top: 1rem;
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.footer-bottom a {
+  color: white;
+}
+
+/* Form Styles */
+.form-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.form-label {
+  font-weight: lighter;
+  font-size: small;
+  text-align: left;
+  display: block;
+  padding-left: 5px;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+.form-row .col-md-6 {
+  margin-bottom: 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.row .col-12 {
+  flex: 0 0 48%;
+  max-width: 48%;
+}
+
+@media (max-width: 768px) {
+  .row .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .full-page-header h1 {
+    font-size: 4rem;
+  }
+}
+
+.text-left-mobile {
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .text-left-mobile {
+    text-align: center;
+  }
+}
+
+.marquee {
+  display: flex;
+  gap: 5px;
+  animation: marquee 50s linear infinite;
+}
+
+.testimonial {
+  width: calc(100vw - 5.75rem);
+  max-width: 300px; /* Adjust as needed */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.vendor-section .vendor-logo {
+  max-width: 80px; /* Adjust the size as needed */
+  height: auto;
+}
+
+@media (max-width: 767.98px) {
+  .vendor-section .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.photo-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.custom-bg-dark {
+  color: #111111 !important; /* Bootstrap's light color */
+}
