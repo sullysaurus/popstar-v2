@@ -99,30 +99,30 @@
     <section class="py-5 bg-light text-center p-5">
       <div class="form-container">
         <h1 class="section-title mb-4 p-4"><em>Step 2: </em>Tell Us About Your Event</h1>
-        <form netlify>
+        <form name="lead" netlify>
           <div class="row">
             <div class="col-12">
-              <label for="firstName" class="form-label">First Name</label>
+              <label name="firstName" for="firstName" class="form-label">First Name</label>
               <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
             </div>
             <div class="col-12">
-              <label for="lastName" class="form-label">Last Name</label>
+              <label name="lasttName" for="lastName" class="form-label">Last Name</label>
               <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
             </div>
             <div class="col-12">
-              <label for="email" class="form-label">Email</label>
+              <label name="email" for="email" class="form-label">Email</label>
               <input type="email" class="form-control" id="email" placeholder="Email" required>
             </div>
             <div class="col-12">
-              <label for="phone" class="form-label">Phone</label>
+              <label name="phone" for="phone" class="form-label">Phone</label>
               <input type="tel" class="form-control" id="phone" placeholder="Phone" required>
             </div>
             <div class="col-12">
-              <label for="eventDate" class="form-label">When is your event?</label>
+              <label name="eventDate" for="eventDate" class="form-label">When is your event?</label>
               <input type="date" class="form-control" id="eventDate" required>
             </div>
             <div class="col-12">
-              <label for="boothPreference" class="form-label">Which booth do you prefer?</label>
+              <label name=booth[]" for="boothPreference" class="form-label">Which booth do you prefer?</label>
               <select class="form-select form-control" id="boothPreference" required>
                 <option selected disabled>Select</option>
                 <option value="booth1">Popstar Booth</option>
@@ -130,15 +130,15 @@
               </select>
             </div>
             <div class="col-12">
-              <label for="venueName" class="form-label">Name of venue</label>
+              <label name="venueName" for="venueName" class="form-label">Name of venue</label>
               <input type="text" class="form-control" id="venueName" placeholder="Name of venue" required>
             </div>
             <div class="col-12">
-              <label for="hours" class="form-label">How many hours?</label>
+              <label name="hours" for="hours" class="form-label">How many hours?</label>
               <input type="number" class="form-control" id="hours" placeholder="Hours" required>
             </div>
             <div class="col-12">
-              <label for="eventDescription" class="form-label">Describe your event</label>
+              <label name="eventDescription" for="eventDescription" class="form-label">Describe your event</label>
               <textarea class="form-control" id="eventDescription" rows="3" placeholder="Describe your event"
                 required></textarea>
             </div>
