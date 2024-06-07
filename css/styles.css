@@ -397,3 +397,15 @@ footer p {
 .custom-bg-dark {
   color: #111111 !important; /* Bootstrap's light color */
 }
+
+@media (max-width: 768px) {
+  .full-page-header {
+    height: 70vh; /* Reduce height for mobile screens */
+    padding: 1em 0; /* Adjust padding for mobile screens */
+  }
+
+  .full-page-header .content {
+    margin-bottom: 1em; /* Adjust margin-bottom for mobile screens */
+    padding: 0 1em; /* Add padding to the sides for mobile screens */
+  }
+}
