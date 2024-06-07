@@ -78,7 +78,6 @@ em {
   justify-content: center;
   align-items: center;
   color: white;
-
   padding: 0 20px;
 }
 
@@ -397,4 +396,11 @@ footer p {
 
 .custom-bg-dark {
   color: #111111 !important; /* Bootstrap's light color */
+}
+
+
+@media (max-width: 768px) {
+  .full-page-header .content {
+    margin-bottom: 2em;
+  }
 }
